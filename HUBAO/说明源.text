@@ -1,0 +1,33 @@
+检测程序
+1.程序启动后清空进程数据库,遍历进程并保存到数据库
+2.间隔扫描进程并清空进程数据库2,将扫描结果并,与原始进程作对比
+首先对比进程数,进程数增加就找出增加的进程,并找到进程模块路径
+如果模块路径在白名单,那么增加原始表的进程,不在白名单就杀死进程
+
+监控程序启动
+监视程序的启动，一旦启动把自己的dll hook进去 
+
+所有的操作是explorer.exe做的，双击事件被explorer.exe捕获，explorer.exe根据打开文件的后缀名，查找注册表，找出对应的打开方式，
+然后调用ShellExecute/ShellExecuteEx，explorer是个系统进程，也没啥
+[/Quote]
+哦 相当于整个待机桌面就是一个运行的程序，（explorer.exe根据打开文件的后缀名，查找注册表，找出对应的打开方式，
+然后调用ShellExecute/ShellExecuteEx）CreateProcess()  IShellExecuteHook 就是双击响应的函数的工作过程
+
+参考注册表项
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Word.Document.8\shell\Open\command]
+@="\"C:\\Program Files\\Microsoft Office\\OFFICE11\\WINWORD.EXE\" /n /dde"
+
+怎么注入explorer.exe  正路：shell扩展；邪道：远程线程注入
+文件过滤驱动
+在底层，ring0级。可以过滤到比如open,close,read,write,copy,move等各种事件。
+拦截进程启动,可以修改SSDT表通过驱动实现，这是较底层的方式；也可以通过在用户层进行全局DLL注入实现
+https://blog.csdn.net/whatday/article/details/103381479?spm=1035.2023.3001.6557&utm_medium=distribute.pc_relevant_bbs_down.none-task-blog-2~default~OPENSEARCH~default-9.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task-blog-2~default~OPENSEARCH~default-9.nonecase
+
+对比字段
+先计算字段B的行数,在依次获取B字段的数据,来与A字段匹配, = 耗时耗资源
+可以先去重;
+
+检测是否正常退出
+在析构函数内,往数据库写入1,启动时检查是否为1,为1表名是正常退出,并将1修改为0,启动时如果是0,表明是非正常退出
+
+记录PID的时候新建线程,并保存PID路径,新记录检测通配匹配路径
