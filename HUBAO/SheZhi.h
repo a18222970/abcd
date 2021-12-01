@@ -65,6 +65,7 @@ public:
 	BOOL GetHash(int hash_type, CString& hash_result, CString hash_message);
 
 
+	BOOL GetHash(int hash_type, CString& hash_result, static CString hash_message);
 	void teZhenMa(CString ptahb, CString& fanHui);
 
 	afx_msg void OnBnClickedOk4();
