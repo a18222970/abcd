@@ -1,0 +1,49 @@
+锁屏:
+方法1 system("rundll32.exe user32.dll, LockWorkStation"); 进入系统锁屏
+方法2 显示一张透明图片,用钩子屏蔽或替换键盘,鼠标消息.
+
+难点:
+1 防止被主动卸载 -> 隐藏程序
+https://jingyan.baidu.com/article/0320e2c1ca9d091b87507bf8.html
+https://blog.csdn.net/weixin_35673021/article/details/113049139
+https://www.cnblogs.com/DuanLaoYe/p/5476979.html
+
+
+2 防止进程被主动退出
+3 隐藏程序痕迹
+4 程序的自我卸载
+5 拦截网站访问
+6 监控游戏程序运行
+7 定时功能
+8 远程监控,控制
+
+
+进度
+功能:
+1.实现了任务栏与桌面隐藏程序,进程隐藏还未实现
+2.设计DLL用以HOOK键盘鼠标,还未实现
+3.设置功能与界面,还未实现
+4.按CTRL+HOME组合键呼出设置界面,还未实现
+5.与手机互联,手机端监控,控制电脑
+6.保护功能启用后,所有键码全部弹出"时间到"提示框,并给予关机,输密码解除选择
+7.开机后读配置文件,如果保护时间到,立即执行保护程序.
+8.安装时随机选择安装位置,并设置自动开机,
+9.配置文件加密处理
+配置文件也可以用XML
+10.联网激活
+设置:
+1.设置时间段启动保护,分每天或者只一次,或者星期几任意选择,或者每月任意选择一天或多天
+获取本地时间  https://blog.csdn.net/qq_42189368/article/details/80567266
+2.浏览器指定网络连接访问
+HOOK浏览器IE  https://blog.csdn.net/qq_29542611/article/details/103756071
+禁止访问网站  https://blog.csdn.net/zhoupuyue/article/details/83741582
+3.程序黑名单,程序白名单,指定运行固定程序,阻止安装新程序.阻止安装软件不能实现,程序黑名单作用不大.
+遍历进程与程序名对比.
+给该进程的主窗口发送WM_CLOSE消息
+TerminateProcess 可以啊。找到进程的类名。也可以发送copydata消息让对方自己退出。
+注册表阻止程序运行 https://tieba.baidu.com/p/2271330311
+在我的程序运行期间如何禁止某个程序运行 https://blog.csdn.net/weixin_30614109/article/details/98837687
+https://blog.csdn.net/sder3445555/article/details/7986824?locationNum=7&fps=1
+如何使用WIN32 API函数编程来检测某个应用程序启动 https://bbs.csdn.net/topics/40194117
+
+TCP自定义协议 https://www.cnblogs.com/yyx1-1/p/6132113.html

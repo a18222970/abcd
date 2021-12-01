@@ -1,0 +1,6 @@
+LIBRARY "hookDll"
+
+EXPORTS
+  ActiveDefenseON
+  ActiveDefenseOFF
+  ava

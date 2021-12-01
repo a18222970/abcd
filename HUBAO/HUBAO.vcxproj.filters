@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\json">
+      <UniqueIdentifier>{a423807b-9378-4746-a3ef-1d25dbb92f6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\tcp">
+      <UniqueIdentifier>{2023a3e2-5e7d-4afa-a8e6-31ed91cef297}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\shezhi">
+      <UniqueIdentifier>{40b7db4e-0bac-48f1-af4f-7240cf5f1e00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\shuoping">
+      <UniqueIdentifier>{b8eab0d5-6b37-4471-a0e8-d6bcc4b9df40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\json">
+      <UniqueIdentifier>{f0c0a41f-4670-4835-9824-a857aa7d4ab1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\tcp">
+      <UniqueIdentifier>{d2e9ed0c-3d21-4ada-ba42-b3f238657727}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\shuoping">
+      <UniqueIdentifier>{388e6ad8-e363-4d13-931e-d98931489ae2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\denglu">
+      <UniqueIdentifier>{7bea3794-c093-45b4-b854-86f56d87e5c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\denglu">
+      <UniqueIdentifier>{b1fff375-2b22-4249-a8c0-d416d51325cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\shezhi">
+      <UniqueIdentifier>{33da0be9-0ea5-4d22-b751-aa3626eb037d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\accscc">
+      <UniqueIdentifier>{73c4fd85-8c15-4f5d-a891-7849e2d88193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\accscc">
+      <UniqueIdentifier>{00f53e2d-bb71-4418-8152-560800d0483f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\shiJian">
+      <UniqueIdentifier>{7b792e8a-b517-4d6d-ae34-07847260259a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\shiJian">
+      <UniqueIdentifier>{3c4c8aef-b2a0-4a1b-a157-6e5a0200092d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HUBAO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HUBAODlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json.h">
+      <Filter>头文件\json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json-forwards.h">
+      <Filter>头文件\json</Filter>
+    </ClInclude>
+    <ClInclude Include="DengLu.h">
+      <Filter>头文件\denglu</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPfuWu.h">
+      <Filter>头文件\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="SheZhi.h">
+      <Filter>头文件\shezhi</Filter>
+    </ClInclude>
+    <ClInclude Include="SuoPing.h">
+      <Filter>头文件\shuoping</Filter>
+    </ClInclude>
+    <ClInclude Include="ACCSCC.h">
+      <Filter>头文件\accscc</Filter>
+    </ClInclude>
+    <ClInclude Include="shiJian.h">
+      <Filter>头文件\shiJian</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HUBAO.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HUBAODlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jsoncpp.cpp">
+      <Filter>源文件\json</Filter>
+    </ClCompile>
+    <ClCompile Include="DengLu.cpp">
+      <Filter>源文件\denglu</Filter>
+    </ClCompile>
+    <ClCompile Include="SheZhi.cpp">
+      <Filter>源文件\shezhi</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPfuWu.cpp">
+      <Filter>源文件\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="SuoPing.cpp">
+      <Filter>源文件\shuoping</Filter>
+    </ClCompile>
+    <ClCompile Include="ACCSCC.cpp">
+      <Filter>源文件\accscc</Filter>
+    </ClCompile>
+    <ClCompile Include="shiJian.cpp">
+      <Filter>源文件\shiJian</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HUBAO.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\HUBAO.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="说明源.text">
+      <Filter>源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\HUBAO.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
