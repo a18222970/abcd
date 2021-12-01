@@ -189,7 +189,7 @@ public://²éÑ¯
 
 		char    ming[266];
 		char    path[MAX_PATH];//260
-   }JC;///
+   }JC;///hjgshjkdgsahjkdgdsfiiiii
 public://½ø³Ì
 	BOOL shaSiJinCheng(DWORD pid);
 	BOOL qiDongJinCheng(CString exePath);

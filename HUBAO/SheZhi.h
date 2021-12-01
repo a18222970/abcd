@@ -63,8 +63,6 @@ public:
 	/*获得哈希值,哈希算法*/
 
 	BOOL GetHash(int hash_type, CString& hash_result, CString hash_message);
-
-
 	void teZhenMa(CString ptahb, CString& fanHui);
 
 	afx_msg void OnBnClickedOk4();
